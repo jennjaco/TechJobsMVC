@@ -20,7 +20,7 @@ namespace TechJobsMVC.Controllers
             {"positionType", "Position Type"},
             {"coreCompetency", "Skill"}
         };
-        internal static Dictionary<string, List<JobField>> TableChoices = new Dictionary<string, List<JobField>>()
+        public static Dictionary<string, List<JobField>> TableChoices = new Dictionary<string, List<JobField>>()
         {
             {"employer", JobData.GetAllEmployers()},
             {"location", JobData.GetAllLocations()},
@@ -30,6 +30,8 @@ namespace TechJobsMVC.Controllers
 
         public IActionResult Index()
         {
+            //List<Job> jobName = JobData.FindAll();
+
             ViewBag.columns = ColumnChoices;
             ViewBag.tableChoices = TableChoices;
             ViewBag.employers = JobData.GetAllEmployers();
