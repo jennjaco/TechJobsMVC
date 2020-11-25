@@ -1,7 +1,5 @@
 ﻿<div class="container body-content">
 
-    <h1>@ViewBag.title</h1>
-
     <form action="/search/results" method="post">
         <h2>Search by:</h2>
 
@@ -36,7 +34,7 @@
     }
     else
     {
-        <h3>Available Jobs: </h3>
+        <h1>@ViewBag.title</h1>
         @foreach (Job job in ViewBag.jobs)
         {
             <table class="job-listing">

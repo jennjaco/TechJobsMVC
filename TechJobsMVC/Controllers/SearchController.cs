@@ -41,7 +41,7 @@ namespace TechJobsMVC.Controllers
                 else
                 {
                     jobs = JobData.FindByColumnAndValue(searchType, searchTerm);
-                    ViewBag.title = "Jobs with " + searchType + ": ";
+                    ViewBag.title = "Available jobs associated with " + searchTerm + ":";
                 }
                 ViewBag.jobs = jobs;
 
