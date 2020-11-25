@@ -110,6 +110,7 @@ textarea {
 
 .body-content {
     margin-top: 72px;
+    background-color: blue;
 }
 
 td, th {
