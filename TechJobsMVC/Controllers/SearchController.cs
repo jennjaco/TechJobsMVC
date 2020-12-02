@@ -29,6 +29,7 @@ namespace TechJobsMVC.Controllers
 
             if (searchTerm == null)
             {
+                ViewBag.columns = ListController.ColumnChoices;
                 return View("Index");
             }
             else
